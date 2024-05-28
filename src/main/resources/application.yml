@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: Effective_Mobile_test_task
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    username: test
+    password: test
+    url: jdbc:postgresql://localhost:5432/postgres
+    hikari:
+      schema: effective
+  jpa:
+    show-sql: on
+    hibernate:
+      ddl-auto: create-drop
+
+
+scheduler:
+  percents:
+    max: 207
+    current: 5
+
+jwt:
+  refreshKey: "9322b577a80c551da2514f22376eda55dcfa88548cf0f30618e901a63e8b90f3"
+  accessTime: 30
+  refreshTime: 60
